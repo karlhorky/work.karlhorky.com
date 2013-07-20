@@ -22,3 +22,6 @@ exports.config =
         ]
     templates:
       joinTo: 'scripts/app.js'
+
+  paths:
+    public: '..'
