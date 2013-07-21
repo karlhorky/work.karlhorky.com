@@ -1,0 +1,23 @@
+.media {
+  display: block;
+  padding: 150px 0;
+  font-size: 12px;
+  line-height: 23px;
+  .media-title {
+    @include transition(all .3s);
+    font-size: 16px;
+    line-height: 28px;
+    color: $cream;
+    &:hover {
+      color: $light-cream;
+      text-shadow: 0 0 8px rgba($white, 0.15);
+
+    }
+  }
+  &.media-timeless {
+    background: $dark-gray;
+  }
+  &.media-ggr {
+    background: $dark-red;
+  }
+}
