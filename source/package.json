@@ -1,7 +1,7 @@
 {
-  "name": "package-name",
-  "description": "Package description",
-  "author": "William Meleyal",
+  "name": "portfolio-karlhorky",
+  "description": "Personal portfolio site for Karl Horky, front-end engineer.",
+  "author": "Karl Horky",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
