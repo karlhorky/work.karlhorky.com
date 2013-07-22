@@ -1,19 +1,19 @@
 .soapbox {
-  background: $light-gray no-repeat center top url(/images/karl.jpg);
+  background: $white no-repeat center top url(/images/karl.jpg);
   font-family: $sans-serif;
-  height: 430px;
+  height: 415px;
   color: $gray;
   .soapbox-title {
     font-weight: 400;
     font-size: 81px;
-    line-height: 95px;
+    line-height: 105px;
     color: $brown;
     margin: 0;
   }
   .soapbox-subtitle {
     font-weight: 300;
     font-size: 43px;
-    margin-bottom: 130px;
+    margin-bottom: 114px;
   }
   .soapbox-body {
     font-size: 20px;
