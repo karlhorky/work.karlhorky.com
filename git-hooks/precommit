@@ -4,7 +4,8 @@ cd source
 brunch build --optimize
 cd ..
 echo "Moving contents to project root"
-mv -f source/public/* .
+cp -r source/public/* .
+rm -rf source/public
 echo "Committing optimized files"
 git add index.html
 git add images
