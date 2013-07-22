@@ -1,17 +1,16 @@
 .media {
   display: block;
   padding: 150px 0;
-  font-size: 12px;
-  line-height: 23px;
+  font-size: 15px;
+  line-height: 24px;
   .media-title {
     @include transition(all .3s);
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 19px;
+    line-height: 35px;
     color: $cream;
     &:hover {
       color: $light-cream;
       text-shadow: 0 0 8px rgba($white, 0.15);
-
     }
   }
   &.media-timeless {
