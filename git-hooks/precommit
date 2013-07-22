@@ -6,7 +6,4 @@ cd ..
 echo "Copying contents to project root"
 cp -r source/public/* .
 echo "Committing optimized files"
-git add index.html
-git add images
-git add scripts
-git add styles
+git add index.html images scripts styles
