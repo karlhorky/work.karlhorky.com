@@ -1,0 +1,10 @@
+echo "Building optimized Brunch application"
+brunch build --optimize
+echo "Copying contents to project root"
+cp -r source/public/* .
+echo "Committing optimized files"
+git add source/public
+git add index.html
+git add images
+git add scripts
+git add styles

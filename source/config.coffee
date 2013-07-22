@@ -24,4 +24,4 @@ exports.config =
       joinTo: 'scripts/app.js'
 
   paths:
-    public: '..'
+    public: 'public'
