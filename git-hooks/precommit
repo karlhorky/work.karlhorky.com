@@ -1,5 +1,8 @@
+#!/bin/sh
 echo "Building optimized Brunch application"
+cd source
 brunch build --optimize
+cd ..
 echo "Copying contents to project root"
 cp -r source/public/* .
 echo "Committing optimized files"
