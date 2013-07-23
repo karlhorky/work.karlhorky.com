@@ -16,11 +16,21 @@
     font-size: 19px;
     line-height: 35px;
     color: $cream;
+    &:before {
+      content: '';
+      display: block;
+    }
   }
   &.media-timeless {
     background: $dark-gray;
   }
   &.media-ggr {
     background: $dark-red;
+  }
+  &.media-tim {
+    background: $purple;
+  }
+  &.media-sport {
+    background: $orange;
   }
 }

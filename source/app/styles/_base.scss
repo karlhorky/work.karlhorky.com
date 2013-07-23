@@ -29,10 +29,19 @@ a {
 }
 
 .container {
+  min-width: 768px;
   max-width: 768px;
   margin: 0 auto;
   &.container-soapbox {
     padding: 70px 365px 0 70px;
     text-align: left;
+  }
+  @media (min-width: 769px) {
+    width: auto;
+    min-width: 960px;
+    max-width: 960px;
+    &.container-soapbox {
+      padding: 70px 557px 0 70px;
+    }
   }
 }
