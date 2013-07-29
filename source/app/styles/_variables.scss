@@ -1,18 +1,24 @@
-$white:         #f8fafb;
-$light-gray:    #c6c7c9;
-$gray:          #554329;
-$dark-gray:     #201c18;
-$black:         #000;
+$white:          #f8fafb;
+$light-gray:     #c6c7c9;
+$gray:           #554329;
+$dark-gray:      #201c18;
+$black:          #000;
 
-$light-cream:   #fbe7ca;
-$cream:         #fed9a5;
-$dark-red:      #510404;
-$light-orange:  #915e2b;
-$orange:        #b95800;
-$green:         #196c08;
-$blue:          #001f50;
-$purple:        #2a0925;
-$brown:         #2c1a08;
+$light-cream:    #fbe7ca;
+$cream:          #fed9a5;
+$dark-cream:     #bc9f74;
+$dark-red:       #510404;
+$light-orange:   #915e2b;
+$orange:         #b95800;
+$green:          #196c08;
+$blue:           #001f50;
+$purple:         #2a0925;
+$brown:          #2c1a08;
 
-$sans-serif:  'Dosis', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$serif:  'Lusitana', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$sans-serif:     'Dosis', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$serif:          'Lusitana', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+
+$tiny-screens:   320px;
+$small-screens:  480px;
+$medium-screens: 768px;
+$large-screens:  960px;

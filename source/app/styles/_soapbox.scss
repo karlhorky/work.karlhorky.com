@@ -1,32 +1,95 @@
 .soapbox {
-  min-width: 768px;
-  background: $white no-repeat center top url(/images/karl.jpg);
+  background: $white no-repeat 59% top url(/images/karl.jpg);
   font-family: $sans-serif;
   height: 415px;
   color: $gray;
+  text-align: center;
+  position: relative;
+  .soapbox-container {
+    display: inline-block;
+    max-width: 710px;
+    padding: 46px 45% 0 8%;
+    text-align: left;
+    @media (min-width: $small-screens) {
+      padding: 46px 40% 0 8%;
+    }
+    @media (min-width: $medium-screens) {
+      padding: 46px 300px 0 0;
+    }
+  }
   .soapbox-title {
     font-weight: 400;
-    font-size: 82px;
-    letter-spacing: 1px;
-    line-height: 85px;
+    font-size: 46px;
+    line-height: 60px;
     color: $brown;
-    margin: 0 0 0 -5px;
+    margin: 0 -38px 0 -4px;
+    @media (min-width: $small-screens) {
+      font-size: 70px;
+      line-height: 75px;
+      margin: 0 -24px 0 -5px;
+    }
+    @media (min-width: $medium-screens) {
+      font-size: 92px;
+      letter-spacing: 1px;
+      line-height: 96px;
+      margin: 0 -24px 0 -7px;
+    }
   }
   .soapbox-subtitle {
+    color: $dark-cream;
+    font-size: 24px;
     font-weight: 300;
-    color: lighten($gray, 35%);
-    font-size: 44px;
-    margin: 0 0 12px -3px;
+    margin: 0 -40px 10px -2px;
+    @media (min-width: $small-screens) {
+      font-size: 37px;
+      margin: 0 -24px 12px -3px;
+    }
+    @media (min-width: $medium-screens) {
+      font-size: 44px;
+      margin: 0 0 12px -3px;
+    }
   }
   .soapbox-lead {
     font-family: $serif;
-    font-size: 23px;
-    line-height: 35px;
-    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 27px;
+    @media (min-width: $small-screens) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media (min-width: $medium-screens) {
+      font-size: 23px;
+      line-height: 35px;
+    }
   }
   .soapbox-body {
+    display: inline-block;
     font-family: $serif;
-    font-size: 17px;
-    margin-right: 15px;
+    font-size: 16px;
+    margin: 0 15px 12px 0;
+    @media (min-width: $small-screens) {
+      font-size: 17px;
+    }
+    @media (min-width: $medium-screens) {
+      display: inline;
+    }
+  }
+  @media (min-width: $small-screens) {
+    background-position: center top;
+  }
+  .soapbox-footer {
+    @media (min-width: $tiny-screens) {
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+  .soapbox-list {
+    @media (min-width: $tiny-screens) {
+      white-space: nowrap;
+    }
+    @media (min-width: $medium-screens) {
+      white-space: normal;
+      margin-left: 85px;
+    }
   }
 }

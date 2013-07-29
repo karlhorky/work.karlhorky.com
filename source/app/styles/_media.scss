@@ -2,7 +2,7 @@
   @include box-shadow(0 -1px 4px rgba($black, 0.3),
                       inset 0 1px 1px rgba($light-cream, 0.1));
   display: block;
-  padding: 110px 0 130px;
+  padding: 30px 0 50px;
   line-height: 24px;
   a {
     @include transition(all .3s);
@@ -12,12 +12,16 @@
     }
   }
   .media-title {
-    font-size: 23px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 32px;
     color: $cream;
     &:before {
       content: '';
       display: block;
+    }
+    @media (min-width: $medium-screens) {
+      font-size: 23px;
+      line-height: 35px;
     }
   }
   &.media-timeless {
@@ -37,5 +41,11 @@
   }
   &.media-extranet {
     background: $blue;
+  }
+  @media (min-width: $small-screens) {
+    padding: 60px 0 80px;
+  }
+  @media (min-width: $medium-screens) {
+    padding: 110px 0 130px;
   }
 }
