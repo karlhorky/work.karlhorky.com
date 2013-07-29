@@ -4,15 +4,15 @@
   color: $gray;
   text-align: center;
   .soapbox-content {
-    height: auto;
+    height: 415px;
     padding-top: 38px;
     padding-bottom: 20px;
     text-align: left;
     width: 49%;
     margin-left: 7%;
     position: relative;
-    @media (min-width: $tiny-screens) {
-      height: 415px;
+    @media (max-width: $tiny-screens - 1) {
+      height: auto;
     }
     @media (min-width: $small-screens) {
       padding-top: 46px;
@@ -86,11 +86,12 @@
     background-position: center top;
   }
   .soapbox-footer {
-    @media (min-width: $tiny-screens) {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    @media (max-width: $tiny-screens - 1) {
+      position: static;
     }
     @media (min-width: $small-screens) {
       bottom: 30px;

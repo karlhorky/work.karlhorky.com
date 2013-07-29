@@ -10,8 +10,6 @@ exports.config =
         # even if they aren't specified in order.before.
         before: [
           'vendor/scripts/jquery.js'
-          # 'vendor/scripts/underscore.js'
-          # 'vendor/scripts/backbone.js'
         ]
     stylesheets:
       joinTo:
