@@ -1,20 +1,23 @@
 .soapbox {
   background: $white no-repeat 59% top url(/images/karl.jpg);
   font-family: $sans-serif;
-  height: 415px;
   color: $gray;
   text-align: center;
-  position: relative;
-  .soapbox-container {
-    display: inline-block;
-    max-width: 710px;
-    padding: 46px 45% 0 7%;
+  .soapbox-content {
+    height: 415px;
+    padding-top: 46px;
     text-align: left;
+    width: 48%;
+    margin-left: 7%;
+    position: relative;
     @media (min-width: $small-screens) {
-      padding: 46px 40% 0 8%;
+      width: 52%;
+      margin-left: 8%;
     }
     @media (min-width: $medium-screens) {
-      padding: 46px 300px 0 0;
+      width: 410px;
+      margin-left: 21px;
+      margin-right: auto;
     }
   }
   .soapbox-title {
@@ -80,7 +83,9 @@
   .soapbox-footer {
     @media (min-width: $tiny-screens) {
       position: absolute;
-      bottom: 25px;
+      bottom: 30px;
+      left: 0;
+      right: 0;
     }
   }
   .soapbox-list {
@@ -88,9 +93,11 @@
     @media (min-width: $tiny-screens) {
       white-space: nowrap;
     }
+    @media (min-width: 650px) {
+      display: inline-block;
+      margin-left: 30px;
+    }
     @media (min-width: $medium-screens) {
-      display: inline;
-      white-space: normal;
       margin-left: 85px;
     }
   }
