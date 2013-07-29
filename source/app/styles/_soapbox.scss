@@ -4,13 +4,18 @@
   color: $gray;
   text-align: center;
   .soapbox-content {
-    height: 415px;
-    padding-top: 46px;
+    height: auto;
+    padding-top: 38px;
+    padding-bottom: 20px;
     text-align: left;
-    width: 48%;
+    width: 49%;
     margin-left: 7%;
     position: relative;
+    @media (min-width: $tiny-screens) {
+      height: 415px;
+    }
     @media (min-width: $small-screens) {
+      padding-top: 46px;
       width: 52%;
       margin-left: 8%;
     }
@@ -45,7 +50,7 @@
     margin: 0 -40px 10px -2px;
     @media (min-width: $small-screens) {
       font-size: 37px;
-      margin: 0 -24px 12px -3px;
+      margin: 0 -32px 12px -3px;
     }
     @media (min-width: $medium-screens) {
       font-size: 44px;
@@ -83,9 +88,12 @@
   .soapbox-footer {
     @media (min-width: $tiny-screens) {
       position: absolute;
-      bottom: 30px;
+      bottom: 20px;
       left: 0;
       right: 0;
+    }
+    @media (min-width: $small-screens) {
+      bottom: 30px;
     }
   }
   .soapbox-list {
@@ -93,7 +101,7 @@
     @media (min-width: $tiny-screens) {
       white-space: nowrap;
     }
-    @media (min-width: 650px) {
+    @media (min-width: 625px) {
       display: inline-block;
       margin-left: 30px;
     }
