@@ -74,12 +74,13 @@
     display: inline-block;
     font-family: $serif;
     font-size: 16px;
-    margin: 0 15px 10px 0;
+    margin: 0 11px 10px 0;
     @media (min-width: $small-screens) {
-      font-size: 17px;
+      margin: 0 15px 10px 0;
     }
     @media (min-width: $medium-screens) {
       display: inline;
+      font-size: 17px;
     }
   }
   @media (min-width: $small-screens) {
@@ -102,12 +103,12 @@
     @media (min-width: $tiny-screens) {
       white-space: nowrap;
     }
-    @media (min-width: 625px) {
+    @media (min-width: 645px) {
       display: inline-block;
-      margin-left: 30px;
+      margin-left: 12px;
     }
     @media (min-width: $medium-screens) {
-      margin-left: 85px;
+      margin-left: 46px;
     }
   }
 }
