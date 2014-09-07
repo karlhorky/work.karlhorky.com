@@ -1,1 +1,106 @@
-(function(){"use strict";var r="undefined"!=typeof window?window:global;if("function"!=typeof r.require){var n={},e={},t=function(r,n){return{}.hasOwnProperty.call(r,n)},i=function(r,n){var e,t,i=[];e=/^\.\.?(\/|$)/.test(n)?[r,n].join("/").split("/"):n.split("/");for(var o=0,u=e.length;u>o;o++)t=e[o],".."===t?i.pop():"."!==t&&""!==t&&i.push(t);return i.join("/")},o=function(r){return r.split("/").slice(0,-1).join("/")},u=function(n){return function(e){var t=o(n),u=i(t,e);return r.require(u)}},f=function(r,n){var t={id:r,exports:{}};n(t.exports,u(r),t);var i=e[r]=t.exports;return i},c=function(r){var o=i(r,".");if(t(e,o))return e[o];if(t(n,o))return f(o,n[o]);var u=i(o,"./index");if(t(e,u))return e[u];if(t(n,u))return f(u,n[u]);throw Error('Cannot find module "'+r+'"')},a=function(r,e){if("object"==typeof r)for(var i in r)t(r,i)&&(n[i]=r[i]);else n[r]=e};r.require=c,r.require.define=a,r.require.register=a,r.require.brunch=!0}})(),window.require.register("application",function(){$(document).ready(function(){return $('a[href^="#"]').on("click",function(r){return r.preventDefault(),$("html, body").animate({scrollTop:$(r.currentTarget.hash).offset().top},750)})})});
+(function(/*! Brunch !*/) {
+  'use strict';
+
+  var globals = typeof window !== 'undefined' ? window : global;
+  if (typeof globals.require === 'function') return;
+
+  var modules = {};
+  var cache = {};
+
+  var has = function(object, name) {
+    return ({}).hasOwnProperty.call(object, name);
+  };
+
+  var expand = function(root, name) {
+    var results = [], parts, part;
+    if (/^\.\.?(\/|$)/.test(name)) {
+      parts = [root, name].join('/').split('/');
+    } else {
+      parts = name.split('/');
+    }
+    for (var i = 0, length = parts.length; i < length; i++) {
+      part = parts[i];
+      if (part === '..') {
+        results.pop();
+      } else if (part !== '.' && part !== '') {
+        results.push(part);
+      }
+    }
+    return results.join('/');
+  };
+
+  var dirname = function(path) {
+    return path.split('/').slice(0, -1).join('/');
+  };
+
+  var localRequire = function(path) {
+    return function(name) {
+      var dir = dirname(path);
+      var absolute = expand(dir, name);
+      return globals.require(absolute, path);
+    };
+  };
+
+  var initModule = function(name, definition) {
+    var module = {id: name, exports: {}};
+    cache[name] = module;
+    definition(module.exports, localRequire(name), module);
+    return module.exports;
+  };
+
+  var require = function(name, loaderPath) {
+    var path = expand(name, '.');
+    if (loaderPath == null) loaderPath = '/';
+
+    if (has(cache, path)) return cache[path].exports;
+    if (has(modules, path)) return initModule(path, modules[path]);
+
+    var dirIndex = expand(path, './index');
+    if (has(cache, dirIndex)) return cache[dirIndex].exports;
+    if (has(modules, dirIndex)) return initModule(dirIndex, modules[dirIndex]);
+
+    throw new Error('Cannot find module "' + name + '" from '+ '"' + loaderPath + '"');
+  };
+
+  var define = function(bundle, fn) {
+    if (typeof bundle === 'object') {
+      for (var key in bundle) {
+        if (has(bundle, key)) {
+          modules[key] = bundle[key];
+        }
+      }
+    } else {
+      modules[bundle] = fn;
+    }
+  };
+
+  var list = function() {
+    var result = [];
+    for (var item in modules) {
+      if (has(modules, item)) {
+        result.push(item);
+      }
+    }
+    return result;
+  };
+
+  globals.require = require;
+  globals.require.define = define;
+  globals.require.register = define;
+  globals.require.list = list;
+  globals.require.brunch = true;
+})();
+require.register("application", function(exports, require, module) {
+$(document).ready(function() {
+  return $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    return $('html, body').animate({
+      scrollTop: $(e.currentTarget.hash).offset().top
+    }, 750);
+  });
+});
+
+});
+
+
+//# sourceMappingURL=app.js.map
