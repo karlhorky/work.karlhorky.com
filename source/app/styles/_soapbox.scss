@@ -9,7 +9,7 @@
     padding-bottom: 20px;
     text-align: left;
     width: 49%;
-    margin-left: 7%;
+    margin-left: 15px;
     position: relative;
     @media (max-width: $tiny-screens - 1) {
       height: auto;
@@ -17,11 +17,10 @@
     @media (min-width: $small-screens) {
       padding-top: 46px;
       width: 52%;
-      margin-left: 8%;
+      margin-left: 21px;
     }
     @media (min-width: $medium-screens) {
       width: 410px;
-      margin-left: 21px;
       margin-right: auto;
     }
   }
