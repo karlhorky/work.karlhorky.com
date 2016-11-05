@@ -3,13 +3,12 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'scripts/app.js': /^app/
-        'scripts/vendor.js': /^vendor/
+        'scripts/app.js': /^app|node_modules/
       order:
         # Files in `vendor` directories are compiled before other files
         # even if they aren't specified in order.before.
         before: [
-          'vendor/scripts/jquery.js'
+          'node_modules/zenscroll/zenscroll-min.js'
         ]
     stylesheets:
       joinTo:
@@ -18,8 +17,5 @@ exports.config =
         before: [
           'vendor/styles/normalize.css'
         ]
-    templates:
-      joinTo: 'scripts/app.js'
-
   paths:
     public: 'public'
