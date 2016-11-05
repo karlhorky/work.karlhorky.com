@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "express": "~3.2.4",
-    "lazyload-image": "^2.1.0",
+    "lazysizes": "^2.0.6",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
   },
   "devDependencies": {
