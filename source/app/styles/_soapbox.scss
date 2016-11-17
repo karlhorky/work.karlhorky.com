@@ -3,111 +3,163 @@
   font-family: $sans-serif;
   color: $gray;
   text-align: center;
-  .soapbox-content {
-    height: 415px;
-    padding-top: 38px;
-    padding-bottom: 20px;
-    text-align: left;
-    width: 49%;
-    margin-left: 15px;
-    position: relative;
-    @media (max-width: $tiny-screens - 1) {
-      height: auto;
-    }
-    @media (min-width: $small-screens) {
-      padding-top: 46px;
-      width: 52%;
-      margin-left: 21px;
-    }
-    @media (min-width: $medium-screens) {
-      width: 410px;
-      margin-right: auto;
-    }
-  }
-  .soapbox-title {
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 60px;
-    color: $brown;
-    margin: 0 -38px 0 -4px;
-    @media (min-width: $small-screens) {
-      font-size: 70px;
-      line-height: 75px;
-      margin: 0 -32px 0 -5px;
-    }
-    @media (min-width: $medium-screens) {
-      font-size: 92px;
-      letter-spacing: 1px;
-      line-height: 96px;
-      margin: 0 -24px 0 -7px;
-    }
-  }
-  .soapbox-subtitle {
-    color: $dark-cream;
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0 -40px 10px -2px;
-    @media (min-width: $small-screens) {
-      font-size: 37px;
-      margin: 0 -32px 12px -3px;
-    }
-    @media (min-width: $medium-screens) {
-      font-size: 49px;
-      margin: 0 0 12px -3px;
-    }
-  }
-  .soapbox-lead {
-    font-family: $serif;
-    font-size: 18px;
-    line-height: 27px;
-    @media (min-width: $small-screens) {
-      font-size: 20px;
-      line-height: 30px;
-    }
-    @media (min-width: $medium-screens) {
-      font-size: 23px;
-      line-height: 35px;
-    }
-  }
-  .soapbox-body {
-    display: inline-block;
-    font-family: $serif;
-    font-size: 16px;
-    margin: 0 11px 10px 0;
-    @media (min-width: $small-screens) {
-      margin: 0 15px 10px 0;
-    }
-    @media (min-width: $medium-screens) {
-      display: inline;
-      font-size: 17px;
-    }
-  }
+
   @media (min-width: $small-screens) {
-    background-position: center top;
+    background-position: 55% top;
   }
-  .soapbox-footer {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    @media (max-width: $tiny-screens - 1) {
-      position: static;
-    }
-    @media (min-width: $small-screens) {
-      bottom: 30px;
-    }
+}
+
+.soapbox-content {
+  height: 415px;
+  padding-top: 38px;
+  padding-bottom: 20px;
+  text-align: left;
+  width: 49%;
+  margin-left: 15px;
+  position: relative;
+
+  @media (max-width: $tiny-screens - 1) {
+    height: auto;
   }
-  .soapbox-list {
-    display: block;
-    @media (min-width: $tiny-screens) {
-      white-space: nowrap;
-    }
-    @media (min-width: 645px) {
-      display: inline-block;
-      margin-left: 12px;
-    }
-    @media (min-width: $medium-screens) {
-      margin-left: 46px;
-    }
+
+  @media (min-width: $small-screens) {
+    padding-top: 46px;
+    width: 52%;
+    margin-left: 21px;
+  }
+
+  @media (min-width: $medium-screens) {
+    width: 410px;
+    margin-right: auto;
+  }
+}
+
+.soapbox-title {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 60px;
+  color: $brown;
+  margin: 0 -38px 0 -4px;
+
+  @media (min-width: 390px) {
+    font-size: 60px;
+    line-height: 68px;
+    margin: 0 -65px 0 -4px;
+  }
+
+  @media (min-width: $small-screens) {
+    font-size: 80px;
+    line-height: 75px;
+    margin: 0 -70px 0 -5px;
+  }
+
+  @media (min-width: $medium-screens) {
+    font-size: 92px;
+    letter-spacing: 1px;
+    line-height: 96px;
+    margin: 0 -24px 0 -7px;
+  }
+}
+
+.soapbox-subtitle {
+  color: $dark-cream;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 -40px 10px -2px;
+
+  @media (min-width: $small-screens) {
+    font-size: 37px;
+    margin: 0 -32px 12px -3px;
+  }
+
+  @media (min-width: $medium-screens) {
+    font-size: 49px;
+    margin: 0 0 12px -3px;
+  }
+}
+
+.soapbox-lead {
+  font-family: $serif;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: -5px;
+
+  @media (min-width: $small-screens) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $medium-screens) {
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+.soapbox-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+
+  @media (max-width: $tiny-screens - 1) {
+    position: static;
+  }
+
+  @media (min-width: $small-screens) {
+    bottom: 30px;
+  }
+
+  // Micro clearfix from @necolas
+  // http://nicolasgallagher.com/micro-clearfix-hack/
+  /**
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    contenteditable attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that are clearfixed.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  &:before,
+  &:after {
+    content: ' '; // 1
+    display: table; // 2
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.soapbox-body {
+  float: left;
+  font-family: $serif;
+  font-size: 16px;
+  margin: 0 11px 10px 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $small-screens) {
+    margin: 0 15px 10px 0;
+  }
+
+  @media (min-width: $medium-screens) {
+    display: inline;
+    font-size: 17px;
+  }
+}
+
+.soapbox-list {
+  display: block;
+  float: left;
+
+  @media (min-width: $tiny-screens) {
+    white-space: nowrap;
+  }
+
+  @media (min-width: $medium-screens) {
+    margin-left: 10px;
   }
 }

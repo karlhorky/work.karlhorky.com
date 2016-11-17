@@ -23,6 +23,7 @@ img {
 a {
   @include transition(color .3s);
   color: $gray;
+
   &:hover {
     color: $orange;
   }
