@@ -32,6 +32,7 @@ module.exports = {
     }],
     'max-len': 'off',
     'no-confusing-arrow': 'off',
+    'object-curly-spacing': ['error', 'never'],
     'react/jsx-filename-extension': 'off', // Compatibility with create-react-app
     'react/no-unused-prop-types': 'off',
   },
