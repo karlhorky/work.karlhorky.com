@@ -1,0 +1,9 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/fbjs/.*
+.*/build/.*
+
+[include]
+
+[libs]
+
+[options]
