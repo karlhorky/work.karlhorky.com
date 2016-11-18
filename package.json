@@ -1,7 +1,8 @@
 {
-  "name": "work",
+  "name": "work.karlhorky.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://work.karlhorky.com",
   "devDependencies": {
     "react-scripts": "0.7.0"
   },
