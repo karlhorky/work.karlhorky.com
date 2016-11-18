@@ -8,5 +8,5 @@ Install dependencies with Yarn and start the server!
 
 ```sh
 $ yarn
-$ npm start
+$ yarn start
 ```
