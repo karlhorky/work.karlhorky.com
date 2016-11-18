@@ -21,13 +21,13 @@ nbproject
 Thumbs.db
 
 # NPM packages folder.
-source/node_modules/
+brunch/source/node_modules/
 
 # Brunch folder for temporary files.
-source/tmp/
+brunch/source/tmp/
 
 # Brunch output folder.
-source/public/
+brunch/source/public/
 
 # Docco output folder.
-docs/
+brunch/docs/
