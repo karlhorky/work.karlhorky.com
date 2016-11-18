@@ -1,4 +1,12 @@
-Portfolio Site
-==============
+# Portfolio Site
 
 Personal portfolio site for Karl Horky, front-end engineer.
+
+## Setup
+
+Install dependencies with Yarn and start the server!
+
+```sh
+$ yarn
+$ npm start
+```
