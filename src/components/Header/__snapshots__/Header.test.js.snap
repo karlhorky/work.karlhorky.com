@@ -1,0 +1,12 @@
+exports[`test renders without crashing 1`] = `
+<div
+  className="App-header">
+  <img
+    alt="logo"
+    className="App-logo"
+    src="test-file-stub" />
+  <h2>
+    Welcome to React
+  </h2>
+</div>
+`;
