@@ -1,12 +1,79 @@
 exports[`test renders without crashing 1`] = `
-<div
-  className="App-header">
-  <img
-    alt="logo"
-    className="App-logo"
-    src="test-file-stub" />
-  <h2>
-    Welcome to React
-  </h2>
-</div>
+<section
+  className={undefined}
+  itemScope={true}
+  itemType="Person">
+  <div
+    className="container">
+    <div
+      className="soapbox-content">
+      <h1
+        className="soapbox-title"
+        itemProp="name">
+        Karl Horky
+      </h1>
+      <div
+        className="soapbox-subtitle"
+        itemProp="jobTitle">
+        Front-end Engineer
+      </div>
+      <div
+        className="soapbox-lead"
+        itemProp="quote">
+        I design and develop 
+        <a
+          data-scroll={true}
+          href="#work">
+          compelling experiences
+        </a>
+         to improve quality of life through the web.
+      </div>
+      <div
+        className="soapbox-footer">
+        <span
+          className="soapbox-body"
+          itemProp="address"
+          itemScope={true}
+          itemType="Address">
+          <span
+            itemProp="addressLocality">
+            Vienna
+          </span>
+          ,
+          <span
+            itemProp="addressCountry">
+            Austria
+          </span>
+        </span>
+        <span
+          className="soapbox-list">
+          <a
+            className="soapbox-body"
+            download={true}
+            href="/karl-horky.pdf">
+            CV
+          </a>
+          <a
+            className="soapbox-body"
+            href="https://github.com/karlhorky"
+            itemProp="url">
+            GitHub
+          </a>
+          <a
+            className="soapbox-body"
+            href="http://www.linkedin.com/in/karlhorky"
+            itemProp="url">
+            LinkedIn
+          </a>
+          <a
+            className="soapbox-body"
+            href="https://twitter.com/karlhorky"
+            itemProp="url">
+            Twitter
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
 `;
