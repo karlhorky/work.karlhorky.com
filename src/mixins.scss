@@ -1,0 +1,9 @@
+@mixin container {
+  max-width: 808px;
+  margin: 0 auto;
+}
+
+@mixin container-lg {
+  max-width: 1000px;
+  margin: 0 auto;
+}

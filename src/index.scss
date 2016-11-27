@@ -1,0 +1,32 @@
+@import 'src/variables.scss';
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font: 100% $serif;
+  color: $cream;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: color .3s;
+  color: $gray;
+
+  &:hover {
+    color: $orange;
+  }
+}

@@ -4,7 +4,7 @@ import styles from './Header.scss';
 
 export default () =>
   <section className={styles.soapbox} itemScope itemType="Person">
-    <div className="container">
+    <div className={styles.soapboxInner}>
       <div className={styles.soapboxContent}>
         <h1 className={styles.soapboxTitle} itemProp="name">Karl Horky</h1>
         <div className={styles.soapboxSubtitle} itemProp="jobTitle">Front-end Engineer</div>
