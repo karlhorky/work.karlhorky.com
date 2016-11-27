@@ -5,6 +5,7 @@
   "homepage": "https://work.karlhorky.com",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "custom-react-scripts": "karlhorky/custom-react-scripts#ce0d36ec12b273b2d17884de8a5b317a66d650c5",
     "eslint": "^3.9.1",
     "eslint-config-airbnb": "latest",
     "eslint-plugin-flowtype": "^2.25.0",
@@ -12,7 +13,6 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
     "flow-bin": "^0.35.0",
-    "react-scripts": "0.7.0",
     "react-test-renderer": "^15.4.0"
   },
   "dependencies": {
