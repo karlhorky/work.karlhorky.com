@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "express": "~4.17.1",
-    "lazysizes": "^2.0.6",
+    "lazysizes": "^5.2.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
   },
   "devDependencies": {
