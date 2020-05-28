@@ -1,2 +1,2 @@
-require('smooth-scroll').init()
+require('smooth-scroll')
 require('lazysizes')

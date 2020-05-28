@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "source"
+    ],
+    "nohoist": [
+      "**/**"
+    ]
+  },
+  "resolutions": {
+    "node-sass": "4.14.1"
+  }
+}
