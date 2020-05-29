@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "auto-reload-brunch": "2.7.1",
-    "brunch": "2.10.17",
+    "brunch": "3.0.0",
     "clean-css-brunch": "2.10.0",
     "coffee-script": "1.12.7",
     "coffee-script-brunch": "2.10.2",
