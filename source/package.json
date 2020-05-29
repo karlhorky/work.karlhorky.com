@@ -8,10 +8,6 @@
     "type": "git",
     "url": ""
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
-  },
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build --production",
