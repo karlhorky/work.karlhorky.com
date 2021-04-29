@@ -906,10 +906,10 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-docco@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/docco/-/docco-0.8.0.tgz#ec71470fe52808f4dbba4fab71380dcdfe9f5396"
-  integrity sha512-QcWBDnnGaT+rgC0wqynznXv0/4hd6nAFdWNs2fN4FvkH2yAnCYVeRU7GIZXNCeUQ955Lufq+TmZcSXiBa1cGQQ==
+docco@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/docco/-/docco-0.8.1.tgz#7a9352564d2d3ed69fc0a04d3f700bf2a88002bb"
+  integrity sha512-OFVdjpxw4aTI+FThrCY2NEWZV/nvGDFlfeQxUTMkKL+oY2gD2sMl0N5ogoAj3YLZU05UDBSh64ROYzLFzxSoSQ==
   dependencies:
     commander ">= 0.5.2"
     fs-extra ">= 0.6.0"
@@ -1844,10 +1844,10 @@ lazy-cache@^1.0.3:
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
   integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
 
-lazysizes@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.3.0.tgz#e31b40bc2500b45483251681c898bbb3ded744ac"
-  integrity sha512-h5i4WPc2FdeTOUHBcU7eyNnOULPCC90wVho+SQTZRh9Q8lev6P0yFwKq8rvfMdBvsKsCyDQBdqoBng9FYbcR/g==
+lazysizes@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.3.2.tgz#27f974c26f5fcc33e7db765c0f4930488c8a2984"
+  integrity sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg==
 
 loader-utils@^0.2.16:
   version "0.2.17"
