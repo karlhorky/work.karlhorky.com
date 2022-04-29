@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>karlhorky/renovate-config"
+    "github>karlhorky/renovate-configg"
   ],
   "major": {
     "enabled": false
