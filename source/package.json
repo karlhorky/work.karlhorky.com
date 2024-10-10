@@ -15,7 +15,7 @@
     "docs": "docco --layout classic app/*.coffee app/*/*.coffee"
   },
   "dependencies": {
-    "express": "4.21.0",
+    "express": "4.21.1",
     "lazysizes": "5.3.2",
     "smooth-scroll": "16.1.3"
   },
